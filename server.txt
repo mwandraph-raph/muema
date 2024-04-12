@@ -1,0 +1,23 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $firstName = $_POST["firstName"];
+    $lastName = $_POST["lastName"];
+    $email = $_POST["email"];
+    $location = $_POST["location"];
+    
+    $to = "your_email@example.com"; // Your email address here
+    $subject = "New Form Submission";
+    $message = "First Name: $firstName\n" .
+               "Last Name: $lastName\n" .
+               "Email: $email\n" .
+               "Location: $location\n";
+    
+    $headers = "From: $email";
+    
+    if (mail($to, $subject, $message, $headers)) {
+        echo "Message sent successfully.";
+    } else {
+        echo "Failed to send message. Please try again later.";
+    }
+}
+?>

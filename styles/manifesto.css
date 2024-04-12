@@ -1,0 +1,28 @@
+.manifesto-section {
+    height: 500px;
+    background-image: url(../images/backgrounds/fries-multiply-bg.jpg);
+    background-color: #cea135;
+    border-top: 30px solid white;
+    color: #11122b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: inset 0px -26px 79px -8px rgba(0, 0, 0, 0.58); */
+}
+
+.manifesto-section > .manifesto-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.manifesto-section > .manifesto-wrapper >.manifesto-content{
+    color: #11122b;
+    font-size: 5em;
+}
+
+.manifesto-section > .manifesto-wrapper > .manifesto-heading h1{
+    text-align: center;
+    color: aqua;
+    margin-top: -50px;
+    font-size: 3em;
+}
